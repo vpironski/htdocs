@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            border: 1px solid red;
+            text-align: center;
+            color: blueviolet;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator JS</h1>
+    
+    <input type="text" id="n1">
+    +
+    <input type="text" id="n2">
+    =
+    <input type="text"  id="sum" disabled="disabled">
+    <button onclick="calc()">Calc</button>
+
+    <script>
+        function calc(){
+            let number1 = document.getElementById("n1").value
+            let number2 = document.getElementById("n2").value
+
+            let sum = Number(number1) + Number(number2);
+
+            document.getElementById("sum").value = sum
+        }
+    </script>
+</body>
+</html>

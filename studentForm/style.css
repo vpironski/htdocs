@@ -1,0 +1,43 @@
+.logo{
+    padding-top: 10px;
+    height: 100px;
+    width: 100px;
+}
+h1{
+    font-family:"Times New Roman", Times, Serif;
+}
+.row{
+    text-align: center;
+}
+.form{
+    font-size: larger;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    border: 2px solid rgb(153,0,0);
+}
+.col-lg-{
+    color:whitesmoke;
+    text-align: center;
+    background-color: rgb(153,0,0);
+    margin: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.button {
+    border-radius: 4px;
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(153,0,0);
+    color: white;
+}

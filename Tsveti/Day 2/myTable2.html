@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            table tbody tr:nth-child(odd){
+                color: aqua;
+            }
+
+            #result{
+                color: red;
+            }  
+              
+            #head{
+                background: red;
+                color: wheat;
+            }       
+        </style>
+    </head>
+    <body>
+        <table id="products">
+            <thead>
+                <tr id = "head">
+                    <th>Items</th>
+                    <th>Expenditure</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Donuts</th>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <th>Milk</th>
+                    <td>5,000</td>
+                </tr>
+                <tr>
+                    <th>Coffee</th>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <th>Stationery</th>
+                    <td>18,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr id = "result">
+                    <th>Totals</th>
+                    <td>21,000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

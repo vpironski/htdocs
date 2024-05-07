@@ -1,0 +1,124 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: May 01, 2022 at 07:23 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.1.4
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Database: `17522`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `courses`
+--
+
+CREATE TABLE `courses` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `info` varchar(1000) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `courses`
+--
+
+INSERT INTO `courses` (`id`, `name`, `info`) VALUES
+(1, 'Intermediate', 'Nike and the Swoosh design are registered trademarks of Nike, Inc. and its affiliates, and are used under license. Nike is the title sponsor of the camps and has no control over the operation of the camps or the acts or omissions of US Sports Camps.'),
+(2, 'Degree', 'Head to Frederick, MD for one week of serious basketball fun for boys and girls of all abilities in summer 2021! Nike Basketball Camp Director Jourdain Blackmon and the Pro Level Training staff will teach you skills and techniques that will help boost your overall skill set and confidence.'),
+(3, 'Post Graduation', 'Pro Level Training Nike Basketball Camps\' mission is to provide players with the skills and mental approach they need to become a better and more explosive player. The Complete Skills camp places emphasis on fundamentals, footwork, balance, and conditioning. The Shooting Camp emphasizes technique, footwork, shooting drills and post/perimeter shooting.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `facilities`
+--
+
+CREATE TABLE `facilities` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `info` varchar(1000) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `facilities`
+--
+
+INSERT INTO `facilities` (`id`, `name`, `info`) VALUES
+(1, 'World Class Basketball Court', 'In basketball, the basketball court is the playing surface, consisting of a rectangular floor, with baskets at each end. In professional or organized basketball, especially when played indoors, it is usually made out of a wood, often maple, and highly polished and completed with a 10 foot rim. Outdoor surfaces are generally made from standard paving materials such as concrete or asphalt.'),
+(2, 'Largest Play Ground', 'The playing field (pitch) should be 100–130 yards (90–120 metres) long and 50–100 yards (45–90 metres) wide; for international matches, it must be 110–120 yards long and 70–80 yards wide. Women, children, and mature players may play a shorter game on a smaller field.'),
+(3, 'Tasty and Healthy Food', 'A cafeteria, sometimes called a canteen outside the U.S., is a type of food service location in which there is little or no waiting staff table service, whether a restaurant or within an institution such as a large office building or school; a school dining location is also referred to as a dining hall or lunchroom (in American English). Cafeterias are different from coffeehouses, although the English term came from Latin American Spanish, where it had and still has the meaning \"coffeehouse\".');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `testimonials`
+--
+
+CREATE TABLE `testimonials` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `comment` varchar(100) DEFAULT NULL,
+  `stars` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `testimonials`
+--
+
+INSERT INTO `testimonials` (`id`, `name`, `comment`, `stars`) VALUES
+(1, 'Jonh Paul', 'It was very exciting! I\'d do it again!', 5),
+(2, 'Christine Berkley', 'Such a wonderful experience! Try it!', 4);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `courses`
+--
+ALTER TABLE `courses`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `facilities`
+--
+ALTER TABLE `facilities`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `testimonials`
+--
+ALTER TABLE `testimonials`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `courses`
+--
+ALTER TABLE `courses`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `facilities`
+--
+ALTER TABLE `facilities`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `testimonials`
+--
+ALTER TABLE `testimonials`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;

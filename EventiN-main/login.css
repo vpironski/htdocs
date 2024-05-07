@@ -1,0 +1,107 @@
+/* Общи стилове за страницата */
+* {
+    box-sizing: border-box;
+}
+
+/* Стилове за хедъра на страницата */
+.header {
+    background-color: #40A2E3;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 20px;
+
+}
+
+/* Стилове за навигационното меню на страницата */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgray;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* Стилове за линковете в навигационното меню */
+.nav a {
+    font-family: "Times New Roman", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover {
+    background-color: dimgray;
+    color: white;
+}
+
+/* Стилове за основното съдържание на страницата */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: "Times New Roman", sans-serif;
+
+}
+.loginForm {
+    width: 300px; /* Set the width of the form */
+    margin: 0 auto; /* Set the left and right margins to "auto" */
+}
+/* Стилове за секцията с логин формата */
+.login {
+    text-align: center;
+    background: lightgray;
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-family: "Times New Roman", sans-serif;
+    margin: auto;
+    position: relative;
+    top: 50px;
+}
+/* Стилове за заглавието на секцията с логин формата */
+.login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+
+}
+
+/* Стилове за етикетите и полетата за въвеждане на логин формата */
+.login label, .login input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", sans-serif;
+
+
+}
+
+button[type="submit"]:hover {
+    background-color: #61C8FF;
+    color: white;
+}
+
+/* Стилове за полетата за въвеждане на логин формата */
+.login input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: "Times New Roman", sans-serif;
+
+}
+
+/* Стилове за бутона за вход на логин формата */
+.login button {
+    background-color: #40A2E3;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.message {
+    color: blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", sans-serif;}

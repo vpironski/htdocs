@@ -1,0 +1,72 @@
+
+/* Общи стилове за страницата */
+* {
+    box-sizing: border-box;
+}
+
+/* Стилове за хедъра на страницата */
+.header {
+    background-color: #40A2E3;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 20px;
+
+}
+
+/* Стилове за навигационното меню на страницата */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgray;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* Стилове за линковете в навигационното меню */
+.nav a {
+    font-family: "Times New Roman", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover {
+    background-color: dimgray;
+    color: white;
+}
+
+/* Стилове за основното съдържание на страницата */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+
+}
+.contacts {
+    background-color: #40A2E3;
+    padding: 20px;
+    border: 5px solid  darkgray;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.6;
+    position: relative;
+    top: 50px;
+}
+
+.contacts h2 {
+    color: #333;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.contacts p {
+    color: #666;
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-align: center;
+}

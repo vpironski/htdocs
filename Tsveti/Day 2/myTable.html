@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            tr.even{
+                background-color: rgb(217, 20, 155);
+            }
+
+            tr.odd{
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="products">
+            <thead>
+                <tr class = "odd" style="background: red;">
+                    <th>Items</th>
+                    <th>Expenditure</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class = "even" >
+                    <th>Donuts</th>
+                    <td>3,000</td>
+                </tr>
+                <tr class = "odd">
+                    <th>Milk</th>
+                    <td>5,000</td>
+                </tr>
+                <tr class = "even">
+                    <th>Coffee</th>
+                    <td>3,000</td>
+                </tr>
+                <tr class = "odd">
+                    <th>Stationery</th>
+                    <td>18,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class = "even">
+                    <th>Totals</th>
+                    <td>21,000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

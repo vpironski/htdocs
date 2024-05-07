@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .submite{
+            margin-left: 120px;
+        }
+        input{
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<form>
+    <label for="name">Name*:</label>
+    <input type="text" id="name" style="margin-left: 60px;"><br>
+
+    <label for="phone">Phone number:</label>
+    <input type="text" id="phone" style="margin-left: 13px;"><br>
+
+    <label for="email">Email Adress:</label>
+    <input type="text" id="email" style="margin-left: 20px;"><br>
+
+    <label for="comment">Comments*:</label>
+    <textarea id="comment" rows="12" cols="30" style="margin-left: 28px">
+    </textarea><br><br>
+
+    <input class="submite" type="submit" value="Submit" onclick = "dif();">
+</form>
+
+
+
+
+
+<script>
+    function dif() {
+        alert ("Thank you for your comment, click 'ok' to Submit");
+    }
+</script>
+</body>
+</html>

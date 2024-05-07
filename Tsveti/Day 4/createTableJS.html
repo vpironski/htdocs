@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "table">
+
+    </div>
+    
+    <script>
+        
+        let data = [
+            "name:Coffe-price:5",
+            "name:Sugar-price:2",
+            "name:milk2-price:52",
+            "name:milk3-price:22",
+            "name:milk4-price:62",
+            "name:milk2-price:52",
+            "name:milk3-price:22",
+            "name:milk4-price:62",
+            "name:milk2-price:52",
+            "name:milk3-price:22",
+            "name:milk4-price:62",
+            "name:milk2-price:52",
+            "name:milk3-price:22",
+            "name:milk4-price:62",
+        ]
+        
+        //let data = [
+        //    { "name": "Coffe", "price": 22 },
+        //    { "name": "Sugar", "price": 20 },
+        //    { "name": "Milk", "pricege": 23 }
+        //]
+
+        //let arr = data[0].split("-")
+        //console.log(arr)
+        //let product = data[0].split("-")[0].split(":")[1]
+        //let price = data[0].split("-")[1].split(":")[1]
+        //console.log(product)
+        //console.log(price)
+
+        let table = "<table border = \"1\">"
+        table +=        "<thead>"
+        table +=            "<tr>"
+        table +=                "<th>Product</th>"
+        table +=                "<th>Price</th>"
+        table +=            "</tr>"
+        table +=        "</thead>"
+        table +=        "<tbody>"
+        for(let i = 0; i < data.length; i++){
+            let currentElement = data[i]
+            let product = currentElement.split("-")[0].split(":")[1]
+            let price = currentElement.split("-")[1].split(":")[1]
+            table += "<tr>"
+            table +=    "<td>" + product + "</td>"
+            table +=    "<td>" + price + "</td>"
+            table += "</tr>"
+        }
+        table +=        "</tbody>"    
+        table +=    "</table>"
+        let div = document.getElementById("table")
+        div.innerHTML = table
+    </script>
+</body>
+</html>

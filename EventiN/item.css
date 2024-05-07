@@ -1,0 +1,68 @@
+/* Общи стилове за страницата */
+* {
+    box-sizing: border-box;
+}
+
+/* Стилове за хедъра на страницата */
+.header {
+    background-color: #40A2E3;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 20px;
+
+}
+
+/* Стилове за навигационното меню на страницата */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgray;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* Стилове за линковете в навигационното меню */
+.nav a {
+    font-family: "Times New Roman", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover {
+    background-color: dimgray;
+    color: white;
+}
+
+/* Стилове за основното съдържание на страницата */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+
+}
+
+.ticket-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ticket-display h2 {
+    margin-bottom: 10px;
+}
+
+.ticket-display p {
+    font-size: 18px;
+}
+
+.ticket-display h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}

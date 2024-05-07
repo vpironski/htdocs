@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, </h1>
+
+    <div id = "main">
+        
+    </div>
+
+    <script>
+        let element = document.getElementsByTagName("h1")[0]
+        //console.log(element.textContent)
+        element.textContent += " Ivan"
+        let div = document.getElementById("main")
+        div.style.color = "#00F2F2"
+        //div.textContent = "<p>Ivan</p>"
+        div.innerHTML = "<p>Ivan</p>"
+    </script>
+</body>
+</html>

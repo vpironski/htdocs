@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorizeTable</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Town</th>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Sofia</td>
+    </tr>
+    <tr>
+        <td>Nick</td>
+        <td>Varna</td>
+    </tr>
+    <tr>
+        <td>Didi</td>
+        <td>Ruse</td>
+    </tr>
+    <tr>
+        <td>Tedy</td>
+        <td>Varna</td>
+    </tr>
+    <tr>
+        <td>Tedy</td>
+        <td>Varna</td>
+    </tr>
+    <tr>
+        <td>Tedy</td>
+        <td>Varna</td>
+    </tr>
+    <tr>
+        <td>Tedy</td>
+        <td>Varna</td>
+    </tr>
+    <tr>
+        <td>Tedy</td>
+        <td>Varna</td>
+    </tr>
+    <tr>
+        <td>Tedy</td>
+        <td>Varna</td>
+    </tr>
+    <tr>
+        <td>Tedy</td>
+        <td>Varna</td>
+    </tr>
+    <tr>
+        <td>Tedy</td>
+        <td>Varna</td>
+    </tr>
+    <tr>
+        <td>Tedy</td>
+        <td>Varna</td>
+    </tr>
+    <tr>
+        <td>Tedy</td>
+        <td>Varna</td>
+    </tr>
+    <tr>
+        <td>Tedy</td>
+        <td>Varna</td>
+    </tr>
+</table>
+
+<button onclick="colorize()">Colorize</button>
+<body>
+<script>
+    function colorize() {
+
+
+        for (var i = 0; i < 14; i++) {
+            if (i%2!=0){
+                let index = i
+                let element = document.getElementsByTagName("tr")[index]
+
+                element.style.background = "red"
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

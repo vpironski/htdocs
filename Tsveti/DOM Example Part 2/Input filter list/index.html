@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{margin-bottom: -15px;
+        }
+    </style>
+</head>
+<body>
+    <input id="myInput" onkeyup="myFunction()" placeholder="Filter..."/>
+    <ul id="myUL">
+
+        <li><p>paris</p></li>
+        <li><p>berlin</p></li>
+        <li><p>new york</p></li>
+        <li><p>sao paulo</p></li>
+        <li><p>hong kong</p></li>
+        <li><p>vienna</p></li>
+    </ul>
+<!--    <script>-->
+<!--        const input = document.getElementById('input');-->
+<!--        input.addEventListener('input', () => {-->
+<!--        // type in your code here-->
+
+<!--        });-->
+<!--    </script>-->
+
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                p = li[i].getElementsByTagName("p")[0];
+                txtValue = p.textContent || p.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

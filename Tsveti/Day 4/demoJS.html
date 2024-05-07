@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Change Picture</h1>
+    <img src="pictures/car1.jpg">
+    <br>
+    <button onclick="change()">Change</button>
+    <script>
+        function change(){
+            let img = document.getElementsByTagName("img")[0]
+            img.src = "pictures/pic2.jpg"
+            console.log(img)
+            //console.log("work")
+        }
+    </script>
+</body>
+</html>

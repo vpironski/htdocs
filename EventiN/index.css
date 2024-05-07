@@ -1,0 +1,103 @@
+/* Общи стилове за страницата */
+* {
+    box-sizing: border-box;
+}
+
+/* Стилове за хедъра на страницата */
+.header {
+    background-color: #40A2E3;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 20px;
+
+}
+
+/* Стилове за навигационното меню на страницата */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgray;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* Стилове за линковете в навигационното меню */
+.nav a {
+    font-family: "Times New Roman", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover {
+    background-color: dimgray;
+    color: white;
+}
+
+/* Стилове за основното съдържание на страницата */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.ticket {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    padding: 4%; /* Use a percentage for padding for responsiveness */
+    margin-bottom: 10%; /* Use a percentage for margin for responsiveness */
+    margin-top: 10%;
+    height: auto; /* Allow the height to adjust based on content */
+}
+
+.ticket h3 {
+    margin: 0;
+    text-align: center;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 2em; /* Use em units for font size for responsiveness */
+}
+
+.ticket button {
+    border-radius: 20px;
+    background-color: #40A2E3;
+    font-family: "Times New Roman", sans-serif;
+    border: none;
+    color: white;
+    padding: 2% 4%; /* Use percentage for padding for responsiveness */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6em; /* Use em units for font size for responsiveness */
+    cursor: pointer;
+    width: 100%; /* Occupy the full width of the container */
+    display: block; /* Set the button to display as a block element */
+    margin-top: 2%; /* Use a percentage for margin for responsiveness */
+}
+
+.tickets h2 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+p {
+    font-size: 20px; /* Set the font size for paragraphs */
+    text-align: center;
+    font-family: "Times New Roman", sans-serif;
+    line-height: 1.6; /* Set the line height for paragraphs */
+    margin-bottom: 20px; /* Add margin at the bottom of paragraphs for spacing */
+}
+.ticket button:hover {
+    background-color: #61C8FF;
+    color: black;
+}
+.ticket img {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    object-fit: cover;
+}

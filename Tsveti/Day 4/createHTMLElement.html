@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            border: 1px solid red;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id = "main">
+    </div>
+
+    <script>
+        //let text = "<p>Hello</p>"
+        let p = document.createElement("p")
+        p.textContent = "Ivan";
+        console.log(p)
+        let div = document.getElementById("main")
+        div.appendChild(p)
+    </script>
+</body>
+</html>

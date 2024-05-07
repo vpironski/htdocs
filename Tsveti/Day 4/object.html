@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /*
+        let car1Model = "Passat"
+        let car1Brand = "VW"
+        let car1Year = 10
+        let car1Color = "Red"
+        */
+
+        let data = [
+            {
+                brand: "Fiat", 
+                model: "500", 
+                color: "white",
+                hp: 100,
+            },
+            {
+                brand: "Fiat", 
+                model: "600", 
+                color: "Red",
+                hp: 120,
+            },
+            {
+                brand: "VW", 
+                model: "Passat", 
+                color: "Red",
+                hp: 130,
+            },
+        ]
+       
+        let list = "<ul>"
+        for(let i = 0; i < data.length; i++){
+            let currentObject = data[i]
+            list += "<li>" + currentObject.brand + "</li>"
+        }
+        list += "</ul>"
+        let body = document.body.innerHTML = list
+    </script>
+</body>
+</html>
